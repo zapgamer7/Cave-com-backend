@@ -1,0 +1,32 @@
+<div class="container">
+  <header>
+    <a href="/" class="logo"> <img src="/imagens/restaurantandbars.jpeg" width="100px" height="100%" class="logo"> </a>
+    <h1 class="pizzahot">TECNOLOGIA NA MESA</h1>
+    <a href="/cart" class="carrinho"><img src="/imagens/carrinho.png" width="70px" height="70px" > </a>
+    <div class="navbar">
+
+      <div class="input-box">
+        <button> <a href="#">+</a> </button >
+      </div>
+
+      <div class="input-box">
+        <button> <a href="#">comanda 1</a> </button>
+      </div>
+
+    </div>
+    <div class="button-pedido">
+      <button class="adicionar-btn" onclick="apagar()">Adicionar pedido</button>
+      <button class="finalizar-btn" onclick="teste()">Adicionar ao carrinho</button>
+    </div>
+  </header>
+    <main>
+        {{#each alimentos}}
+            <div class="alimento">
+              <div class="image-alimento"><img src="/imagens_cadastro/{{dest_imagem}}" id="{{dest_imagem}}"></div>
+              <h1 class="nome-alimento" id="{{id}}">{{nome_alimento}}</h1>
+              <h1 class="preco-alimento" id="{{preco_alimento}}">R${{preco_alimento}}</h1>
+              <input type="checkbox" name="alimentos" value="{{id}}">
+            </div>
+        {{/each}}
+    </main>
+</div>

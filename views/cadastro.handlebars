@@ -1,0 +1,81 @@
+    <div class="container">
+        <div class="form-image">
+            <img src="./imagens/undraw_sign_up_n6im.svg">
+        </div>
+        <div class="form">
+            <form action="/add" method="post" enctype="multipart/form-data">
+                <div class="form-header">
+                    <h1>Cadastre o produto</h1>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="nome-alimento">Nome do produto</label>
+                        <input type="text" name="nome_alimento" id="nome_alimento" placeholder="Digite o nome do produto" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="preco-produto">Preço do produto</label>
+                        <input type="text" name="preco_produto" id="preco_produto" placeholder="Digite o preço do produto" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="desc-produto">Descrição do produto</label>
+                        <input type="text" name="desc_produto" id="desc_produto" placeholder="Digite a descrição do produto" required>
+                    </div>
+                </div>
+                <div class="categoria-inputs">
+                    <div class="categoria-title">
+                        <h6>Categorias</h6>
+                    </div>
+                    <div class="categoria-group">
+                        <div class="categoria-input">
+                            <input type="radio" id="principal"  value="principal" name="categorias" onclick="maisprincipal()">
+                            <label for="principal">Principal</label>
+                        </div>
+
+                        <div class="categoria-input">
+                            <input type="radio" id="sobremesas" name="categorias" value="sobremesa" onclick="maisobremesa()">
+                            <label for="sobremesas">Sobremesas</label>
+                        </div>
+
+                        <div class="categoria-input">
+                            <input type="radio" id="bebidas" name="categorias"  value="bebidas" onclick="maisbebida()">
+                            <label for="bebidas">Bebidas</label>
+                        </div>
+                    </div>
+                    <div class="maiscategoria-group">
+                        <div id="maiscategoria-input1">
+    
+                        </div>
+                        <div id="maiscategoria-input2">
+    
+                        </div>
+                        <div id="maiscategoria-input3">
+    
+                        </div>
+                        <div id="maiscategoria-input4">
+    
+                        </div>
+                        <div id="maiscategoria-input5">
+    
+                        </div>
+                        <div id="maiscategoria-input6">
+    
+                        </div>
+                        <div id="maiscategoria-input7">
+    
+                        </div>
+                        <div id="maiscategoria-input8">
+    
+                        </div>
+                    </div>
+                    <div class="enviar-foto">
+                        <input type="file" id="imagem" name="imagem">
+                    </div>
+                    <div class="enviar-input">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
